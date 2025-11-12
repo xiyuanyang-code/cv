@@ -2,7 +2,6 @@
 .header-content {
     /* max-width: 1280px; */
     max-width: 1300px;
-    min-width: 900px;
     width: 65%;
     margin: auto;
 }
@@ -136,4 +135,180 @@ b, .navbar-brand b {
 strong {
     color: #0066cc;
     font-weight: 600;
+}
+
+/* 头像图片样式 */
+.avatar-img {
+    width: 80%;
+}
+
+/* 媒体查询：适用于平板设备 */
+@media screen and (max-width: 992px) {
+    .section-container,
+    .header-content {
+        width: 90%;
+        min-width: auto;
+    }
+    
+    /* 保持头像和文字的左右布局 */
+    #head .row {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #head .col-xs-12.col-sm-4 {
+        width: 33.33%;
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+    
+    #head .col-xs-12.col-sm-8 {
+        width: 66.66%;
+        flex: 0 0 66.66%;
+        max-width: 66.66%;
+    }
+    
+    /* 调整头像图片在平板上的大小 */
+    #head .col-xs-12.col-sm-4 img {
+        width: 80% !important;
+        max-width: 200px;
+    }
+}
+
+/* 媒体查询：适用于手机设备 */
+@media screen and (max-width: 768px) {
+    .section-container,
+    .header-content {
+        width: 95%;
+        padding: 0 10px;
+    }
+    
+    .home-header {
+        height: auto;
+        line-height: normal;
+        padding: 10px 0;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header-logo {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    
+    ul {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .section-container {
+        margin-top: 120px;
+        font-size: 16px;
+    }
+    
+    .section-item h3 {
+        font-size: 26px;
+    }
+    
+    .section-item h4 {
+        font-size: 17px;
+    }
+    
+    .subheadings {
+        font-size: 24px !important;
+    }
+    
+    .research-section abstract {
+        font-size: 13px;
+    }
+    
+    .link-block img {
+        width: 32px;
+        margin-right: 8px;
+    }
+    
+    .home-header .navbar-brand {
+        font-size: 14px;
+    }
+    
+    /* 保持头像和文字的左右布局在小屏幕上 */
+    #head .row {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #head .col-xs-12.col-sm-4 {
+        width: 40%;
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+    
+    #head .col-xs-12.col-sm-8 {
+        width: 60%;
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+    
+    /* 调整头像图片在小屏幕上的大小 */
+    #head .col-xs-12.col-sm-4 img {
+        width: 80% !important;
+        max-width: 150px;
+    }
+}
+
+/* 额外的移动设备优化 */
+@media screen and (max-width: 480px) {
+    .section-container {
+        font-size: 15px;
+    }
+    
+    .section-item h3 {
+        font-size: 24px;
+    }
+    
+    .section-item h4 {
+        font-size: 16px;
+    }
+    
+    .subheadings {
+        font-size: 22px !important;
+    }
+    
+    .research-section abstract {
+        font-size: 12px;
+    }
+    
+    .link-block img {
+        width: 28px;
+        margin-right: 6px;
+    }
+    
+    /* 保持头像和文字的左右布局在极小屏幕上 */
+    #head .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    #head .col-xs-12.col-sm-4 {
+        width: 45%;
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+    
+    #head .col-xs-12.col-sm-8 {
+        width: 55%;
+        flex: 0 0 55%;
+        max-width: 55%;
+    }
+    
+    /* 调整头像图片在小屏幕上的大小 */
+    #head .col-xs-12.col-sm-4 img {
+        width: 80% !important;
+        max-width: 120px;
+    }
 }
