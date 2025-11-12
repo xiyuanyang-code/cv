@@ -117,6 +117,225 @@ b, .navbar-brand b {
     font-size: 14px;
 }
 
+/* 项目部分的新样式 */
+.projects-section {
+    margin-top: 20px;
+}
+
+.project-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.project-title {
+    font-size: 19px;
+    font-weight: 500;
+    margin: 0;
+    color: #333;
+}
+
+.project-links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-description {
+    margin-top: 10px;
+}
+
+.project-description .abstract {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* 出版物部分的新样式 */
+.publications-section {
+    margin-top: 20px;
+}
+
+.publication-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.publication-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.publication-image {
+    flex: 0 0 200px;
+    align-self: flex-start;
+}
+
+.publication-content {
+    flex: 1;
+}
+
+.publication-title {
+    font-size: 19px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.publication-links {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.author {
+    margin: 8px 0;
+    font-style: italic;
+    color: #555;
+}
+
+/* 媒体查询：适用于手机设备 */
+@media screen and (max-width: 768px) {
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .project-links {
+        margin-top: 5px;
+    }
+    
+    .project-card {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .publication-card {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .publication-image {
+        flex: none;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+/* Skills 部分的新样式 */
+.skills-section {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 12px;
+}
+
+.skill-category {
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.skill-title {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.skill-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.skill-icons img {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+}
+
+.skill-icons img:hover {
+    transform: scale(1.1);
+}
+
+.skill-description {
+    margin: 5px 0 0 0;
+    font-size: 15px;
+    color: #555;
+    line-height: 1.4;
+}
+
+.skill-points {
+    text-align: left;
+    margin: 10px 0 0 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.skill-points li {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Technical Blogs 部分的新样式 */
+.blog-section {
+    margin-top: 15px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.blog-links {
+    margin-bottom: 10px;
+}
+
+.blog-description {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* 在小屏幕上调整Skills布局 */
+@media screen and (max-width: 768px) {
+    .skills-section {
+        grid-template-columns: 1fr; /* 在小屏幕上变为单列 */
+    }
+    
+    .skill-category {
+        padding: 10px 12px;
+    }
+}
+
 .section-item .row li {
     line-height: 32px;
 }

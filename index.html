@@ -182,20 +182,19 @@
 
                 <br>
                 <h4 style="margin: 0;" class="subheadings">Publications</h4>
-                <section class="research-section">
-                    <!-- research 1 -->
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <img width="100%" src="./assets/img/appcopilot.png" alt="" srcset="">
+                <section class="publications-section">
+                    <div class="publication-card">
+                        <div class="publication-image">
+                            <img src="./assets/img/appcopilot.png" alt="AppCopilot Publication" width="100%">
                         </div>
-                        <div class="col-xs-12 col-sm-8">
-                            <h4>
+                        <div class="publication-content">
+                            <h4 class="publication-title">
                                 AppCopilot: Toward General, Accurate, Long-Horizon, and Efficient Mobile Agent
                             </h4>
                             <p class="author">
                                 Jingru Fan, Yufan Dang, Jingyao Wu, Huatao Li, Runde Yang, <strong>Xiyuan Yang</strong>, Yuheng Wang, Chen Qian
                             </p>
-                            <div class="link-list">
+                            <div class="publication-links">
                                 <a href="https://arxiv.org/pdf/2509.02444" target="_blank"><img src="https://img.shields.io/badge/arXiv-2509.02444-b31b1b.svg" alt="arXiv"/></a>
                                 <span> | </span>
                                 <a href="https://github.com/OpenBMB/AppCopilot" target="_blank"><img src="https://img.shields.io/badge/Github-AppCopilot-blue" alt="arXiv"/></a>
@@ -204,23 +203,21 @@
                             <abstract class="abstract">
                                 We introduce <b>AppCopilot</b>, a multimodal, multi-agent mobile agent designed for seamless cross-app operation. It implements a complete end-to-end pipeline encompassing data collection, model training, fine-tuning, efficient inference, and deployment across PC and mobile platforms. At the model level, it integrates multimodal foundation models with robust bilingual (Chinese-English) support. The reasoning and control layer employs chain-of-thought reasoning, hierarchical task decomposition, and multi-agent collaboration. The execution layer supports experiential adaptation, voice commands, function calling, cross-app and cross-device orchestration, and full mobile app compatibility. This work provides a concrete roadmap and actionable reference architecture for building general-purpose mobile agents.
                             </abstract>
-
                         </div>
                     </div>
 
-                    <!-- research 2 -->
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <img width="100%" src="./assets/img/infomosaic.png" alt="" srcset="">
+                    <div class="publication-card">
+                        <div class="publication-image">
+                            <img src="./assets/img/infomosaic.png" alt="InfoMosaic Publication" width="100%">
                         </div>
-                        <div class="col-xs-12 col-sm-8">
-                            <h4>
+                        <div class="publication-content">
+                            <h4 class="publication-title">
                                 InfoMosaic-Bench: Evaluating Multi-Source Information Seeking in Tool-Augmented Agents
                             </h4>
                             <p class="author">
                                 Yaxin Du, Yuanshuo Zhang, <strong>Xiyuan Yang</strong>, Yifan Zhou, Cheng Wang, Gongyi Zou, Xianghe Pang, Wenhao Wang, Menglan Chen, Shuo Tang, Zhiyu Li, Feiyu Xiong, Siheng Chen
                             </p>
-                            <div class="link-list">
+                            <div class="publication-links">
                                 <a href="https://arxiv.org/pdf/2510.02271" target="_blank"><img src="https://img.shields.io/badge/arXiv-2510.02271-b31b1b.svg" alt="arXiv"/></a>
                                 <span> | </span>
                                 <a href="https://huggingface.co/datasets/Dorothydu/InfoMosaic_Bench" target="_blank"><img src="https://img.shields.io/badge/Dataset-Hugging%20Face-yellow.svg" alt="Dataset on Hugging Face"/></a>
@@ -232,10 +229,8 @@
                             <abstract class="abstract">
                                we introduce <b>InfoMosaic-Bench</b>, the first benchmark dedicated to multi-source information seeking in tool-augmented agents. Covering 6 representative domains (medicine, finance, maps, video, web, and multi-domain integration), InfoMosaic-Bench requires agents to combine general-purpose search with domain-specific tools. Tasks are synthesized with InfoMosaic-Flow, a scalable pipeline that grounds task conditions in verified tool outputs, enforces cross-source dependencies, and filters out shortcut cases solvable by trivial lookup. This design guarantees both reliability and non-triviality.
                             </abstract>
-
                         </div>
                     </div>
-
                 </section>
             </section>
 
@@ -248,24 +243,83 @@
 
                 <h4 style="margin: 0;" class="subheadings">Skills</h4>
                 
-                <ul class="row">
-                    <li><b>Programming Languages</b>: Python (Proficient), C++ (Proficient), Rust, JavaScript, HTML, CSS.</li>
-                    <li><b>Tools</b>: Git, LaTeX, Shell, Docker.</li>
-                    <li><b>Python Modules</b>: Torch (Proficient), Numpy, Pandas, Matplotlib, BeautifulSoup, FastMCP, etc.</li>
-                    <li><b>ML & DL</b>: Familiar with Deep Learning architectures and model training techniques.</li>
-                    <li><b>LLM & Agents</b>: Familiar with core architectures for Large Language Models (LLMs) and multi-agent frameworks.</li>
-                    <li><b>Languages</b>: Chinese (native), English (CET-6: 584).</li>
-                    <li>Active <a href="https://xiyuanyang-code.github.io">Github</a> committer with 30+ open-source repositories and 1500+ commits.</li>
-                </ul>
+                <div class="skills-section">
+                    <div class="skill-category">
+                        <h5 class="skill-title"><b>Programming Languages</b></h5>
+                        <div class="skill-icons">
+                            <img src="./assets/logo/python-svgrepo-com.svg" alt="Python" width="32" height="32">
+                            <img src="./assets/logo/cpp-svgrepo-com.svg" alt="C++" width="32" height="32">
+                            <img src="./assets/logo/rust-svgrepo-com.svg" alt="Rust" width="32" height="32">
+                            <img src="./assets/logo/css-3-svgrepo-com.svg" alt="CSS" width="32" height="32">
+                            <img src="./assets/logo/js-svgrepo-com.svg" alt="JavaScript" width="32" height="32">
+                            <img src="./assets/logo/html-svgrepo-com.svg" alt="HTML" width="32" height="32">
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h5 class="skill-title"><b>Tools</b></h5>
+                        <div class="skill-icons">
+                            <img src="./assets/logo/git-svgrepo-com.svg" alt="Git" width="32" height="32">
+                            <img src="./assets/logo/latex-svgrepo-com.svg" alt="LaTeX" width="32" height="32">
+                            <img src="./assets/logo/bash-icon-svgrepo-com.svg" alt="Shell" width="32" height="32">
+                            <img src="./assets/logo/docker-svgrepo-com.svg" alt="Docker" width="32" height="32">
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h5 class="skill-title"><b>Python Modules</b></h5>
+                        <div class="skill-icons">
+                            <img src="./assets/logo/pytorch-svgrepo-com.svg" alt="Torch" width="32" height="32">
+                            <img src="./assets/logo/numpy-svgrepo-com.svg" alt="Numpy" width="32" height="32">
+                            <img src="./assets/logo/pandas-svgrepo-com.svg" alt="Pandas" width="32" height="32">
+                            <img src="./assets/logo/Matplotlib.svg" alt="Matplotlib" width="32" height="32">
+                            <img src="./assets/logo/mcp.png" alt="FastMCP" width="32" height="32">
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h5 class="skill-title"><b>ML & DL</b></h5>
+                        <ul class="skill-points">
+                            <li>Deep learning architectures</li>
+                            <li>Model training techniques</li>
+                            <li>Reinforcement learning</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h5 class="skill-title"><b>LLM & Agents</b></h5>
+                        <ul class="skill-points">
+                            <li>Large Language Models</li>
+                            <li>Post training techniques</li>
+                            <li>Multi-agent frameworks</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h5 class="skill-title"><b>Languages</b></h5>
+                        <ul class="skill-points">
+                            <li>Chinese (native)</li>
+                            <li>English (CET-6: 584)</li>
+                        </ul>
+                    </div>
+
+                    <!-- * remove that skill -->
+                    <!-- <div class="skill-category">
+                        <h5 class="skill-title"><b>Open Source</b></h5>
+                        <p class="skill-description">Active <a href="https://xiyuanyang-code.github.io">Github</a> committer with 30+ open-source repositories and 1500+ commits.</p>
+                    </div> -->
+                </div>
+                <br><br>
                 
                 <h4 style="margin: 0;" class="subheadings">Technical Blogs</h4>
-                 <div class="link-list">
-                <a href="https://github.com/xiyuanyang-code/xiyuanyang-code.github.io" target="_blank"><img src="https://img.shields.io/badge/Github-Techinal Blog-blue" /></a>
-                <span> | </span>
-                <a href="https://xiyuanyang-code.github.io" target="_blank"><img src="https://img.shields.io/badge/Webpage-Techinal%20Blog-green.svg" alt="Webpage"/></a>
+                <div class="blog-section">
+                    <div class="blog-links">
+                        <a href="https://github.com/xiyuanyang-code/xiyuanyang-code.github.io" target="_blank"><img src="https://img.shields.io/badge/Github-Techinal Blog-blue" /></a>
+                        <span> | </span>
+                        <a href="https://xiyuanyang-code.github.io" target="_blank"><img src="https://img.shields.io/badge/Webpage-Techinal%20Blog-green.svg" alt="Webpage"/></a>
+                    </div>
+                    <p class="blog-description">
+                        Active <a href="https://xiyuanyang-code.github.io">Github</a> committer with 30+ open-source repositories and 1500+ commits.
+                    </p>
+                    <p class="blog-description">
+                        Maintainer of <b><a href="https://xiyuanyang-code.github.io">Xiyuan Yang's Technical Blog</a></b>. I regularly publish technical content focusing on computer science and AI. To date, I have authored <b>over 120 articles</b> with a cumulative word count exceeding <b>450,000</b> words.
+                    </p>
                 </div>
-
-                Maintainer of <b><a href="https://xiyuanyang-code.github.io">Xiyuan Yang's Technical Blog</a></b>. I regularly publish technical content focusing on computer science and AI. To date, I have authored <b>over 120 articles</b> with a cumulative word count exceeding <b>450,000</b> words.
 
                 <br><br>
                 <h4 style="margin: 0;" class="subheadings">Technical Projects</h4>
@@ -273,48 +327,40 @@
                 <p>More will be added here in the future. You can see <a href="https://xiyuanyang-code.github.io/Tool-Zoo/index.html">Tool Zoo</a> for more info.
                 </p>
 
-
-                <!-- todo optimize project list -->
-                <section class="research-section">
-                <div class="row">
-                        <!-- <div class="col-xs-12 col-sm-4">
-                            <img width="100%" src="./assets/img/infomosaic.png" alt="" srcset="">
-                        </div> -->
-                        <div class="col-xs-12 col-sm-12">
-                            <h4>
+                <!-- Optimized project list -->
+                <section class="projects-section">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h4 class="project-title">
                                 AlphaBuild: Generating Formulaic Alphas on a Wider Range of Stock Data
                             </h4>
-                            <div class="link-list">
+                            <div class="project-links">
                                 <!-- todo open source pdfs -->
                             </div>
+                        </div>
+                        <div class="project-description">
                             <abstract class="abstract">
                                Leading <b>AlphaBuild</b> as the final project of course SJTU-AI1803, an RL-based methodology using PPO to optimize factor mining process based on <a href="https://github.com/RL-MLDM/alphagen">AlphaGen</a>, achieving superior backtest performance by leveraging smaller, parallel factor pools and PCA for final factor selection.
                             </abstract>
                         </div>
-                        
-                        <br><br>
-
-                        <div class="row">
-                        <!-- <div class="col-xs-12 col-sm-4">
-                            <img width="100%" src="./assets/img/infomosaic.png" alt="" srcset="">
-                        </div> -->
-                        <div class="col-xs-12 col-sm-12">
-                            <h4>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h4 class="project-title">
                                ProbeCode: AI coding Agent with MCP Framework
                             </h4>
-                            <div class="link-list">
+                            <div class="project-links">
                                 <a href="https://github.com/xiyuanyang-code/ProbeCode" target="_blank"><img src="https://img.shields.io/badge/Github-ProbeCode-blue" /></a>
-
                             </div>
+                        </div>
+                        <div class="project-description">
                             <abstract class="abstract">
                                <b>ProbeCode</b>: AI coding agent integrating static code inspection with a ReAct framework to understand and memorize long-context code. It operates and comprehends code at the project level and tackles the core challenge of long and complex codebases exceeding standard LLM context windows.
                             </abstract>
-
                         </div>
-
-
                     </div>
-                    </section>
+                </section>
 
             </section>
 
