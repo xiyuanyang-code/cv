@@ -101,6 +101,13 @@
                                 </a>
                                 <div class="gap"></div>
 
+                                <!-- * google scholar settings -->
+                                <a href="https://scholar.google.com/citations?user=K5IF1jMAAAAJ" target="_blank" class="dock-item">
+                                    <img src="./assets/platform/gscholar.png" alt="CV (PDF Versions)">
+                                </a>
+                                <div class="gap"></div>
+                                
+
                                 <!-- * blog settings -->
                                 <a href="https://xiyuanyang-code.github.io" target="_blank" class="dock-item">
                                     <img src="./assets/logo/blogger-line.svg" alt="Technical Blog">
@@ -136,7 +143,7 @@
                     Bio
                 </h3>
                 <p>
-                    <b>Xiyuan Yang (杨希渊)</b> is now an undergraduate (sophomore) in School of Artificial Intelligence, Shanghai Jiao Tong University (<b>SJTU-SAI</b>). During his freshman year of study, he ranked <b>FIRST of 62</b> in grades and received honors including the <b>National Scholarship</b>. His research interests focus on <b>Digital Agents</b> with broad capability boundaries (Agentic Scaling Law) and <b>Collaborative Multi-agent Intelligence</b>. He joined the research group <b>MAGIC</b> in SJTU, under the supervision of Prof. <a href="https://siheng-chen.github.io/">Siheng Chen</a>. 
+                    <b>Xiyuan Yang (杨希渊)</b> is now an undergraduate (sophomore) in School of Artificial Intelligence, Shanghai Jiao Tong University (<b>SJTU-SAI</b>). During his freshman year of study, he ranked <b>SECOND of 62</b> in grades and received honors including the <b>National Scholarship</b> (<b>5</b> scholarships in total). His research interests focus on <b>Digital Agents</b> with broad capability boundaries (Agentic Scaling Law) and <b>Collaborative Multi-agent Intelligence</b>. He joined the research group <b>MAGIC</b> in SJTU, under the supervision of Prof. <a href="https://siheng-chen.github.io/">Siheng Chen</a>. 
                 </p>
             </section>
 
@@ -149,20 +156,22 @@
                 <p>
                     School of Artificial Intelligence, Shanghai Jiao Tong University.
                     <br>
-                    GPA: <b>4.14/4.3</b> (Ranked <b>1</b> out of 62)
+                    GPA: <b>4.1/4.3</b> (Ranked <b>2</b> out of 62)
                     <br>
                     Score: <b>94.0/100</b>
                     <br>
-                    Scholarships: National Scholarship (first 3%), Zhiyuan Honor Scholarships (first 5%)
+                    Scholarships: National Scholarship (first 3%), "Han Ying Ju Hua" Scholarship (15 per year), Zhiyuan Honor Scholarships (first 50%), SJTU Undergraduate Excellence Scholarship
                     <br>
                     High Graded Courses:
-                    <ul class="row">
-                        <li>Comprehensive Programming Practice: 100/100</li>
-                        <li>Linear Algebra (Honor): 98/100</li>
-                        <li>Fundamental of Programming (Honor): 98/100</li>
-
+                    <ul class="compact-list">
+                        <li>Comprehensive Programming Practice: <strong>100/100</strong></li>
+                        <li>Probability and Statistics (Honor): <strong>100/100</strong></li>
+                        <li>Algorithm Design and Analysis: <strong>100/100</strong></li>
+                        <li>Numerical Analysis: <strong>100/100</strong></li>
+                        <li>Linear Algebra (Honor): <strong>98/100</strong></li>
+                        <li>Fundamentals of Programming (Honor): <strong>98/100</strong></li>
+                        <li>Fundamentals of ML, DL and RL: <strong>98/100</strong></li>
                     </ul>
-
                 </p>
             </section>
 
@@ -189,6 +198,32 @@
                 <section class="publications-section">
                     <div class="publication-card">
                         <div class="publication-image">
+                            <img src="./assets/paper/infomosaic.png" alt="InfoMosaic Publication" width="100%">
+                        </div>
+                        <div class="publication-content">
+                            <h4 class="publication-title">
+                                InfoMosaic-Bench: Evaluating Multi-Source Information Seeking in Tool-Augmented Agents
+                            </h4>
+                            <p><b>ICLR 2026 Accepted</b></p>
+                            <p class="author">
+                                Yaxin Du, Yuanshuo Zhang, <strong>Xiyuan Yang</strong>, Yifan Zhou, Cheng Wang, Gongyi Zou, Xianghe Pang, Wenhao Wang, Menglan Chen, Shuo Tang, Zhiyu Li, Feiyu Xiong, Siheng Chen
+                            </p>
+                            <div class="publication-links">
+                                <a href="https://arxiv.org/pdf/2510.02271" target="_blank"><img src="https://img.shields.io/badge/arXiv-2510.02271-b31b1b.svg" alt="arXiv"/></a>
+                                <span> | </span>
+                                <a href="https://huggingface.co/datasets/Dorothydu/InfoMosaic_Bench" target="_blank"><img src="https://img.shields.io/badge/Dataset-Hugging%20Face-yellow.svg" alt="Dataset on Hugging Face"/></a>
+                                <span> | </span>
+                                <a href="https://github.com/DorothyDUUU/Info-Mosaic" target="_blank"><img src="https://img.shields.io/badge/Github-InfoMosaic-blue" /></a>
+                                <span> | </span>
+                                <a href="https://dorothyduuu.github.io/Info-Mosaic/" target="_blank"><img src="https://img.shields.io/badge/Webpage-Info%20Mosaic-green.svg" alt="Webpage"/></a>
+                            </div>
+                            <abstract class="abstract">
+                               We introduce <b>InfoMosaic-Bench</b>, the first benchmark dedicated to multi-source information seeking in tool-augmented agents. Covering 6 representative domains (medicine, finance, maps, video, web, and multi-domain integration), InfoMosaic-Bench requires agents to combine general-purpose search with domain-specific tools. Tasks are synthesized with InfoMosaic-Flow, a scalable pipeline that grounds task conditions in verified tool outputs, enforces cross-source dependencies, and filters out shortcut cases solvable by trivial lookup. This design guarantees both reliability and non-triviality.
+                            </abstract>
+                        </div>
+                    </div>
+                    <div class="publication-card">
+                        <div class="publication-image">
                             <img src="./assets/paper/appcopilot.png" alt="AppCopilot Publication" width="100%">
                         </div>
                         <div class="publication-content">
@@ -205,32 +240,6 @@
                             </div>
                             <abstract class="abstract">
                                 We introduce <b>AppCopilot</b>, a multimodal, multi-agent mobile agent designed for seamless cross-app operation. It implements a complete end-to-end pipeline encompassing data collection, model training, fine-tuning, efficient inference, and deployment across PC and mobile platforms. At the model level, it integrates multimodal foundation models with robust bilingual (Chinese-English) support. The reasoning and control layer employs chain-of-thought reasoning, hierarchical task decomposition, and multi-agent collaboration. The execution layer supports experiential adaptation, voice commands, function calling, cross-app and cross-device orchestration, and full mobile app compatibility. This work provides a concrete roadmap and actionable reference architecture for building general-purpose mobile agents.
-                            </abstract>
-                        </div>
-                    </div>
-
-                    <div class="publication-card">
-                        <div class="publication-image">
-                            <img src="./assets/paper/infomosaic.png" alt="InfoMosaic Publication" width="100%">
-                        </div>
-                        <div class="publication-content">
-                            <h4 class="publication-title">
-                                InfoMosaic-Bench: Evaluating Multi-Source Information Seeking in Tool-Augmented Agents
-                            </h4>
-                            <p class="author">
-                                Yaxin Du, Yuanshuo Zhang, <strong>Xiyuan Yang</strong>, Yifan Zhou, Cheng Wang, Gongyi Zou, Xianghe Pang, Wenhao Wang, Menglan Chen, Shuo Tang, Zhiyu Li, Feiyu Xiong, Siheng Chen
-                            </p>
-                            <div class="publication-links">
-                                <a href="https://arxiv.org/pdf/2510.02271" target="_blank"><img src="https://img.shields.io/badge/arXiv-2510.02271-b31b1b.svg" alt="arXiv"/></a>
-                                <span> | </span>
-                                <a href="https://huggingface.co/datasets/Dorothydu/InfoMosaic_Bench" target="_blank"><img src="https://img.shields.io/badge/Dataset-Hugging%20Face-yellow.svg" alt="Dataset on Hugging Face"/></a>
-                                <span> | </span>
-                                <a href="https://github.com/DorothyDUUU/Info-Mosaic" target="_blank"><img src="https://img.shields.io/badge/Github-InfoMosaic-blue" /></a>
-                                <span> | </span>
-                                <a href="https://dorothyduuu.github.io/Info-Mosaic/" target="_blank"><img src="https://img.shields.io/badge/Webpage-Info%20Mosaic-green.svg" alt="Webpage"/></a>
-                            </div>
-                            <abstract class="abstract">
-                               we introduce <b>InfoMosaic-Bench</b>, the first benchmark dedicated to multi-source information seeking in tool-augmented agents. Covering 6 representative domains (medicine, finance, maps, video, web, and multi-domain integration), InfoMosaic-Bench requires agents to combine general-purpose search with domain-specific tools. Tasks are synthesized with InfoMosaic-Flow, a scalable pipeline that grounds task conditions in verified tool outputs, enforces cross-source dependencies, and filters out shortcut cases solvable by trivial lookup. This design guarantees both reliability and non-triviality.
                             </abstract>
                         </div>
                     </div>
@@ -301,11 +310,6 @@
                         </ul>
                     </div>
 
-                    <!-- * remove that skill -->
-                    <!-- <div class="skill-category">
-                        <h5 class="skill-title"><b>Open Source</b></h5>
-                        <p class="skill-description">Active <a href="https://xiyuanyang-code.github.io">Github</a> committer with 30+ open-source repositories and 1500+ commits.</p>
-                    </div> -->
                 </div>
                 <br><br>
                 
@@ -332,13 +336,45 @@
 
                 <!-- Optimized project list -->
                 <section class="projects-section">
+                    <div class="publication-card">
+                        <div class="publication-image">
+                            <img src="./assets/paper/Intellisearch.png" alt="IntelliSearch" width="100%">
+                        </div>
+                        <div class="publication-content">
+                            <h4 class="publication-title">
+                                IntelliSearch V3.1: Unifying Search, Empowering Action for Tool Calling Autonomous Agents.
+                            </h4>
+                            <div class="publication-links">
+                                <a href="https://github.com/SJTU-SAI-GeekCenter/IntelliSearch" target="_blank"><img src="https://img.shields.io/badge/IntelliSearch-Agentic%20Tool-blue?style=for-the-badge&logo=github" alt="intellisearch"/></a>
+                            </div>
+                            <abstract class="abstract">
+                                We introduce <b>IntelliSearch</b>, a search-augmented intelligent agent for reliable decision support in real-world, high-noise and multi-constraint environments. Built on the Model Context Protocol (MCP), the system enables large language models to interact with heterogeneous tools, data sources, and execution environments through standardized, verifiable interfaces. IntelliSearch integrates 16 MCP servers and over one hundred carefully engineered tool interfaces, supporting multi-source retrieval, controlled execution, and feedback-driven reasoning. The agent architecture decouples reasoning, memory, and tool scheduling to better support long-horizon tasks and system extensibility. Evaluations on realistic scenarios, including complex transportation planning and cross-source academic retrieval, show that IntelliSearch effectively combines breadth-oriented recall with depth-oriented verification, producing accurate and actionable results in practical settings.
+                            </abstract>
+                        </div>
+                    </div>
+                    <div class="publication-card">
+                        <div class="publication-image">
+                            <img src="./assets/paper/e3-ml-master.png" alt="IntelliSearch" width="100%">
+                        </div>
+                        <div class="publication-content">
+                            <h4 class="publication-title">
+                                E³-ML-Master: Advanced Envisioning-Executing for Goal-Driven Self-Evolved ML-Master
+                            </h4>
+                            <div class="publication-links">
+                                <a href="https://github.com/xiyuanyang-code/AI1811-E3-ML-Master" target="_blank"><img src="https://img.shields.io/badge/E³--ML--Master-Evolving--Agent-pink?style=for-the-badge&logo=read-the-docs" alt="arXiv"/></a>
+                            </div>
+                            <abstract class="abstract">
+                                We propose <b>E³-ML-Master</b>, an agent framework that enhances environment interaction and introspective reasoning through unified <b>Envisioning</b>, <b>Executing</b>, and <b>Evolution</b>. The framework employs a dual-layer loop in which an Envisioner performs global MCTS-based reasoning over long-term memory, while an Executor conducts fine-grained, environment-aware optimizations via tool interactions. Experiments on MLE-Bench show that E³-ML-Master autonomously discovers more efficient strategies and achieves superior performance, while its general architecture provides a scalable foundation for complex, environment-interactive tasks beyond machine learning.
+                            </abstract>
+                        </div>
+                    </div>
                     <div class="project-card">
                         <div class="project-header">
                             <h4 class="project-title">
                                 AlphaBuild: Generating Formulaic Alphas on a Wider Range of Stock Data
                             </h4>
                             <div class="project-links">
-                                <a href="https://github.com/xiyuanyang-code/My-Typst-Note/releases/latest/download/alphabuild.pdf" target="_blank"><img src="https://img.shields.io/badge/PDF-Techinal Report-red" /></a>
+                                <a href="https://github.com/xiyuanyang-code/My-Typst-Note/releases/latest/download/alphabuild.pdf" target="_blank"><img src="https://img.shields.io/badge/PDF-Techinal Report-red?style=for-the-badge&logo=arxiv" /></a>
                             </div>
                         </div>
                         <div class="project-description">
@@ -347,22 +383,22 @@
                             </abstract>
                         </div>
                     </div>
-                    
                     <div class="project-card">
                         <div class="project-header">
                             <h4 class="project-title">
-                               ProbeCode: AI coding Agent with MCP Framework
+                                SAI Community: The first open-source SAIer's forum for courses, careers and future.
                             </h4>
                             <div class="project-links">
-                                <a href="https://github.com/xiyuanyang-code/ProbeCode" target="_blank"><img src="https://img.shields.io/badge/Github-ProbeCode-blue" /></a>
+                                <a href="https://sjtu-sai.github.io/SAI-Community/" target="_blank"><img src="https://img.shields.io/badge/SAI--Community-Community-006400?style=for-the-badge&logo=gitbook" /></a>
                             </div>
                         </div>
                         <div class="project-description">
                             <abstract class="abstract">
-                               <b>ProbeCode</b>: AI coding agent integrating static code inspection with a ReAct framework to understand and memorize long-context code. It operates and comprehends code at the project level and tackles the core challenge of long and complex codebases exceeding standard LLM context windows.
+                               The first open-source learning community and technical exchange platform of the School of Artificial Intelligence at Shanghai Jiao Tong University, featuring course material sharing, internship information dissemination, and domain-specific technical knowledge exchange.
                             </abstract>
                         </div>
                     </div>
+                    
                 </section>
 
             </section>
@@ -374,10 +410,13 @@
                 </h3>
 
                 <ul class="row">
+                    <li> 2026-01: "Han Ying Ju Hua" Scholarship (15 per year.)</li>
+                    <li> 2025-12: SJTU Undergraduate Excellence Scholarship</li>
+                    <li> 2025-10: <b>Zhiyuan Honor Scholarships</b> (first 50 %)</li>
                     <li> 2025-10: Challenge Cup <b><a href="https://mp.weixin.qq.com/s/aO85Qtgv1q-AhClfEu4Gpw">Defender</a></b> (揭榜挂帅擂台赛 人工智能赛道 擂主 特等奖第一名)</li>
                     <li> 2025-09: <b>National Scholarship</b> (first 3%)</li>
                     <li> 2025-01: <b>Honorable</b> Mention in MCM 2025</li>
-                    <li> 2024-10: <b>Zhiyuan Honor Scholarships</b> (first 5%)</li>
+                    <li> 2024-10: <b>Zhiyuan Honor Scholarships</b> (first 50 %)</li>
                 </ul>
                 
             </section>
@@ -404,7 +443,6 @@
             line-height: 1.4;
         ">
             <p>© 2025 Xiyuan Yang. All rights reserved.</p>
-            <p>All the codes are generated by LLMs (<a href="https://github.com/iflow-ai/iflow-cli">iflow-CLI</a>)</p>
         </div>
     </div>
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>

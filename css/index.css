@@ -592,3 +592,18 @@ strong {
         max-width: 120px;
     }
 }
+
+.compact-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0; /* 消除外部间距 */
+    }
+.compact-list li {
+    margin-bottom: 0; /* 每一项之间的间距极小，保持紧凑 */
+    color: #333;
+}
+.compact-list strong {
+        font-family: "Times New Roman", Times, serif;
+        color: #000000; /* 纯黑色加粗 */
+        font-weight: bold;
+    }
