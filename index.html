@@ -18,6 +18,14 @@
 
   <link rel="stylesheet" href="assets/css/font_sans_serif.css">
   <link rel="stylesheet" href="assets/css/theme-luka.css">
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const isDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+      document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+    })();
+  </script>
 </head>
 <body class="theme-luka">
   <nav class="top-nav">
@@ -70,8 +78,17 @@
         <h2 class="section-title">About Me</h2>
         <div class="section-body">
           <p>
-            <b>Xiyuan Yang (杨希渊)</b> is now an undergraduate (sophomore) in School of Artificial Intelligence, Shanghai Jiao Tong University (<b>SJTU-SAI</b>). During his freshman year of study, he ranked <b>SECOND of 62</b> in grades and received honors including the <b>National Scholarship</b> (<b>5</b> scholarships in total). His research interests focus on <b>Digital Agents</b> with broad capability boundaries (Agentic Scaling Law) and <b>Collaborative Multi-agent Intelligence</b>. He joined the research group <b>MAGIC</b> in SJTU, under the supervision of Prof. <a href="https://siheng-chen.github.io/">Siheng Chen</a>. 
-            </p>
+            <b>Xiyuan Yang (杨希渊)</b> is now an undergraduate (sophomore) in School of Artificial Intelligence, Shanghai Jiao Tong University (<b>SJTU-SAI</b>). During his freshman year of study, he ranked <b>SECOND of 62</b> in grades and received honors including the <b>National Scholarship</b> (<b>5</b> scholarships in total). His research interests focus on <b>Digital Agents</b> with broad capability boundaries (Agentic Scaling Law) and <b>Collaborative Multi-agent Intelligence</b>. He joined the research group <b>MAGIC</b> in SJTU, under the supervision of Prof. <a href="https://siheng-chen.github.io/">Siheng Chen</a>.
+          </p>
+          <p>
+            My research interests focus on exploring the <b>Agentic Scaling Law</b> for large language models in the Agent era, to expand the capability boundaries of language model agents in areas such as tool calling, reasoning generalization, and long-term memory. I also investigate multi-agent collaboration workflows and information optimization within collective intelligence. I believe the future world will be a world of agents.
+          </p>
+          <p>Topics I'm currently interested in:</p>
+          <ul>
+            <li>Agentic Tool Calling and Agentic Memory Enhancement</li>
+            <li>Multi-agent Systems and Multi-Agent Collaborations</li>
+            <li>Domain-augmented Agents (Software Coding Agents, etc.)</li>
+          </ul>
           <p><strong><a href="https://github.com/xiyuanyang-code/resume/releases/latest/download/XiyuanYang-Resume.pdf" target="_blank" rel="noopener">Download my CV</a></strong></p>
         </div>
       </div>
@@ -84,15 +101,26 @@
               <img src="assets/img/sjtu.png" alt="Institution logo" class="institution-logo">
               <div class="experience-content">
                 <p class="exp-title"><strong>Shanghai Jiao Tong University</strong></p>
-                <p class="exp-detail">B.S. in Artificial Intelligence</p>
+                <p class="exp-detail">B.S. in Artificial Intelligence, School of Artificial Intelligence</p>
                 <p class="exp-period">2024 - 2028</p>
+                <p class="exp-detail"><strong>GPA:</strong> 4.1/4.3 (Ranked <strong>2</strong> out of 62)</p>
+                <p class="exp-detail"><strong>Score:</strong> 94.0/100</p>
+                <p class="exp-detail"><strong>Scholarships:</strong> National Scholarship (first 3%), "Han Ying Ju Hua" Scholarship (15 per year), Zhiyuan Honor Scholarships (first 50%), SJTU Undergraduate Excellence Scholarship</p>
+                <p class="exp-detail"><strong>High Graded Courses:</strong></p>
+                <ul class="course-list">
+                  <li>Comprehensive Programming Practice: <strong>100/100</strong></li>
+                  <li>Probability and Statistics (Honor): <strong>100/100</strong></li>
+                  <li>Algorithm Design and Analysis: <strong>100/100</strong></li>
+                  <li>Numerical Analysis: <strong>100/100</strong></li>
+                  <li>Linear Algebra (Honor): <strong>98/100</strong></li>
+                  <li>Fundamentals of Programming (Honor): <strong>98/100</strong></li>
+                  <li>Fundamentals of ML, DL and RL: <strong>98/100</strong></li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- todo 这里要把原来 education 的迁移进来 -->
 
       <div class="section" id="experience">
         <h2 class="section-title">Experience</h2>
@@ -111,33 +139,196 @@
         </div>
       </div>
 
-      <div class="section" id="projects">
-        <h2 class="section-title">Projects</h2>
-        <div class="section-body">
-          <div class="card project-card">
-            <a href="https://github.com/yourname/project-name">Project Name</a>: A short one-line summary describing what this project does and why it matters.
-          </div>
-        </div>
-      </div>
-
       <div class="section" id="publications">
         <h2 class="section-title">Publications</h2>
         <div class="section-body">
           <div class="publications">
-            <ol class="bibliography">
-              <li>
-                <div class="pub-row">
-                  <div class="pub-content">
-                    <div class="title">Paper Title Goes Here</div>
-                    <div class="author"><strong>Your Name</strong>, Coauthor A, Coauthor B</div>
-                    <div class="periodical"><em><strong>Conference / Journal / arXiv</strong></em></div>
-                    <div class="links">
-                      <a href="#">Paper</a> / <a href="#">Code</a> / <a href="#">Project</a>
-                    </div>
+            <div class="publication-card">
+              <div class="publication-header">
+                <div class="publication-image">
+                  <img src="assets/paper/infomosaic.png" alt="InfoMosaic Publication" width="100%">
+                </div>
+                <div class="publication-content">
+                  <h4 class="publication-title">InfoMosaic-Bench: Evaluating Multi-Source Information Seeking in Tool-Augmented Agents</h4>
+                  <p><strong>ICLR 2026 Accepted</strong></p>
+                  <p class="author">Yaxin Du, Yuanshuo Zhang, <strong>Xiyuan Yang</strong>, Yifan Zhou, Cheng Wang, Gongyi Zou, Xianghe Pang, Wenhao Wang, Menglan Chen, Shuo Tang, Zhiyu Li, Feiyu Xiong, Siheng Chen</p>
+                  <div class="publication-links">
+                    <a href="https://arxiv.org/pdf/2510.02271" target="_blank">arXiv</a> /
+                    <a href="https://huggingface.co/datasets/Dorothydu/InfoMosaic_Bench" target="_blank">Dataset</a> /
+                    <a href="https://github.com/DorothyDUUU/Info-Mosaic" target="_blank">Code</a> /
+                    <a href="https://dorothyduuu.github.io/Info-Mosaic/" target="_blank">Project</a>
                   </div>
                 </div>
-              </li>
-            </ol>
+              </div>
+              <div class="abstract">
+                We introduce <b>InfoMosaic-Bench</b>, the first benchmark dedicated to multi-source information seeking in tool-augmented agents. Covering 6 representative domains (medicine, finance, maps, video, web, and multi-domain integration), InfoMosaic-Bench requires agents to combine general-purpose search with domain-specific tools. Tasks are synthesized with InfoMosaic-Flow, a scalable pipeline that grounds task conditions in verified tool outputs, enforces cross-source dependencies, and filters out shortcut cases solvable by trivial lookup.
+              </div>
+            </div>
+
+            <div class="publication-card">
+              <div class="publication-header">
+                <div class="publication-image">
+                  <img src="assets/paper/appcopilot.png" alt="AppCopilot Publication" width="100%">
+                </div>
+                <div class="publication-content">
+                  <h4 class="publication-title">AppCopilot: Toward General, Accurate, Long-Horizon, and Efficient Mobile Agent</h4>
+                  <p class="author">Jingru Fan, Yufan Dang, Jingyao Wu, Huatao Li, Runde Yang, <strong>Xiyuan Yang</strong>, Yuheng Wang, Chen Qian</p>
+                  <div class="publication-links">
+                    <a href="https://arxiv.org/pdf/2509.02444" target="_blank">arXiv</a> /
+                    <a href="https://github.com/OpenBMB/AppCopilot" target="_blank">Code</a> /
+                    <a href="https://huggingface.co/ffcosmos/AppCopilot" target="_blank">Models</a>
+                  </div>
+                </div>
+              </div>
+              <div class="abstract">
+                We introduce <b>AppCopilot</b>, a multimodal, multi-agent mobile agent designed for seamless cross-app operation. It implements a complete end-to-end pipeline encompassing data collection, model training, fine-tuning, efficient inference, and deployment across PC and mobile platforms. At the model level, it integrates multimodal foundation models with robust bilingual (Chinese-English) support. The reasoning and control layer employs chain-of-thought reasoning, hierarchical task decomposition, and multi-agent collaboration.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="section-body">
+          <div class="publication-card">
+            <div class="publication-header">
+              <div class="publication-image">
+                <img src="assets/paper/Intellisearch.png" alt="IntelliSearch" width="100%">
+              </div>
+              <div class="publication-content">
+                <h4 class="publication-title">IntelliSearch V3.1: Unifying Search, Empowering Action for Tool Calling Autonomous Agents</h4>
+                <div class="project-links">
+                  <a href="https://github.com/SJTU-SAI-GeekCenter/IntelliSearch" target="_blank"><img src="https://img.shields.io/badge/IntelliSearch-github-brown?style=for-the-badge" /></a>
+                </div>
+              </div>
+            </div>
+            <div class="abstract">
+              We introduce <b>IntelliSearch</b>, a search-augmented intelligent agent for reliable decision support in real-world, high-noise and multi-constraint environments. Built on the Model Context Protocol (MCP), the system enables large language models to interact with heterogeneous tools, data sources, and execution environments through standardized, verifiable interfaces. IntelliSearch integrates 16 MCP servers and over one hundred carefully engineered tool interfaces, supporting multi-source retrieval, controlled execution, and feedback-driven reasoning. The agent architecture decouples reasoning, memory, and tool scheduling to better support long-horizon tasks and system extensibility.
+            </div>
+          </div>
+
+          <div class="publication-card">
+            <div class="publication-header">
+              <div class="publication-image">
+                <img src="assets/paper/e3-ml-master.png" alt="E3-ML-Master" width="100%">
+              </div>
+              <div class="publication-content">
+                <h4 class="publication-title">E³-ML-Master: Advanced Envisioning-Executing for Goal-Driven Self-Evolved ML-Master</h4>
+                <div class="project-links">
+                  <a href="https://github.com/xiyuanyang-code/AI1811-E3-ML-Master" target="_blank"><img src="https://img.shields.io/badge/E³ ML Master-github-brown?style=for-the-badge" /></a>
+                </div>
+              </div>
+            </div>
+            <div class="abstract">
+              We propose <b>E³-ML-Master</b>, an agent framework that enhances environment interaction and introspective reasoning through unified <b>Envisioning</b>, <b>Executing</b>, and <b>Evolution</b>. The framework employs a dual-layer loop in which an Envisioner performs global MCTS-based reasoning over long-term memory, while an Executor conducts fine-grained, environment-aware optimizations via tool interactions. Experiments on MLE-Bench show that E³-ML-Master autonomously discovers more efficient strategies and achieves superior performance.
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-content">
+              <h4 class="project-title">AlphaBuild: Generating Formulaic Alphas on a Wider Range of Stock Data</h4>
+              <div class="project-links">
+                <a href="https://github.com/xiyuanyang-code/My-Typst-Note/releases/latest/download/alphabuild.pdf" target="_blank"><img src="https://img.shields.io/badge/AlphaBuild-Tech Report-brown?style=for-the-badge" /></a>
+              </div>
+            </div>
+            <div class="abstract">
+              Leading <b>AlphaBuild</b> as the final project of course SJTU-AI1803, an RL-based methodology using PPO to optimize factor mining process based on <a href="https://github.com/RL-MLDM/alphagen">AlphaGen</a>, achieving superior backtest performance by leveraging smaller, parallel factor pools and PCA for final factor selection.
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-content">
+              <h4 class="project-title">SAI Community: The first open-source SAIer's forum for courses, careers and future</h4>
+              <div class="project-links">
+                <a href="https://sjtu-sai.github.io/SAI-Community/" target="_blank"><img src="https://img.shields.io/badge/SAI Community-Website-brown?style=for-the-badge" /></a>
+              </div>
+            </div>
+            <div class="abstract">
+              The first open-source learning community and technical exchange platform of the School of Artificial Intelligence at Shanghai Jiao Tong University, featuring course material sharing, internship information dissemination, and domain-specific technical knowledge exchange.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="technical-blogs">
+        <h2 class="section-title">Technical Blogs</h2>
+        <div class="section-body">
+          <p>
+            Active <a href="https://github.com/xiyuanyang-code/xiyuanyang-code.github.io" target="_blank">GitHub</a> committer with 30+ open-source repositories and 1500+ commits.
+          </p>
+          <p>
+            Maintainer of <strong><a href="https://xiyuanyang-code.github.io" target="_blank">Xiyuan Yang's Technical Blog</a></strong>. I regularly publish technical content focusing on computer science and AI. To date, I have authored <strong>over 120 articles</strong> with a cumulative word count exceeding <strong>450,000</strong> words.
+          </p>
+          <p>
+            <a href="https://github.com/xiyuanyang-code/xiyuanyang-code.github.io" target="_blank">GitHub Repository</a> /
+            <a href="https://xiyuanyang-code.github.io" target="_blank">Blog Website</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="section-body">
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h5 class="skill-title"><strong>Programming Languages</strong></h5>
+              <div class="skill-icons">
+                <img src="assets/logo/python-svgrepo-com.svg" alt="Python" width="32" height="32" title="Python">
+                <img src="assets/logo/cpp-svgrepo-com.svg" alt="C++" width="32" height="32" title="C++">
+                <img src="assets/logo/rust-svgrepo-com.svg" alt="Rust" width="32" height="32" title="Rust">
+                <img src="assets/logo/css-3-svgrepo-com.svg" alt="CSS" width="32" height="32" title="CSS">
+                <img src="assets/logo/js-svgrepo-com.svg" alt="JavaScript" width="32" height="32" title="JavaScript">
+                <img src="assets/logo/html-svgrepo-com.svg" alt="HTML" width="32" height="32" title="HTML">
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h5 class="skill-title"><strong>Tools</strong></h5>
+              <div class="skill-icons">
+                <img src="assets/logo/git-svgrepo-com.svg" alt="Git" width="32" height="32" title="Git">
+                <img src="assets/logo/latex-svgrepo-com.svg" alt="LaTeX" width="32" height="32" title="LaTeX">
+                <img src="assets/logo/bash-icon-svgrepo-com.svg" alt="Shell" width="32" height="32" title="Shell">
+                <img src="assets/logo/docker-svgrepo-com.svg" alt="Docker" width="32" height="32" title="Docker">
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h5 class="skill-title"><strong>Python Modules</strong></h5>
+              <div class="skill-icons">
+                <img src="assets/logo/pytorch-svgrepo-com.svg" alt="PyTorch" width="32" height="32" title="PyTorch">
+                <img src="assets/logo/numpy-svgrepo-com.svg" alt="NumPy" width="32" height="32" title="NumPy">
+                <img src="assets/logo/pandas-svgrepo-com.svg" alt="Pandas" width="32" height="32" title="Pandas">
+                <img src="assets/logo/Matplotlib.svg" alt="Matplotlib" width="32" height="32" title="Matplotlib">
+                <img src="assets/logo/mcp.png" alt="FastMCP" width="32" height="32" title="FastMCP">
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h5 class="skill-title"><strong>ML & DL</strong></h5>
+              <ul class="skill-points">
+                <li>Deep learning architectures</li>
+                <li>Model training techniques</li>
+                <li>Reinforcement learning</li>
+              </ul>
+            </div>
+
+            <div class="skill-category">
+              <h5 class="skill-title"><strong>LLM & Agents</strong></h5>
+              <ul class="skill-points">
+                <li>Large Language Models</li>
+                <li>Post training techniques</li>
+                <li>Multi-agent frameworks</li>
+              </ul>
+            </div>
+
+            <div class="skill-category">
+              <h5 class="skill-title"><strong>Languages</strong></h5>
+              <ul class="skill-points">
+                <li>Chinese (Native)</li>
+                <li>English (CET-6: 584)</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -148,11 +339,31 @@
           <div class="awards-grid">
             <div class="award-item">
               <span class="award-icon">🏅</span>
-              <div class="award-text"><strong>Award Name</strong></div>
+              <div class="award-text">2026-01: <strong>"Han Ying Ju Hua" Scholarship</strong> (15 per year)</div>
+            </div>
+            <div class="award-item">
+              <span class="award-icon">🏅</span>
+              <div class="award-text">2025-12: <strong>SJTU Undergraduate Excellence Scholarship</strong></div>
             </div>
             <div class="award-item">
               <span class="award-icon">🥇</span>
-              <div class="award-text"><strong>Competition / Scholarship / Honor</strong></div>
+              <div class="award-text">2025-10: <strong>Zhiyuan Honor Scholarships</strong> (first 50%)</div>
+            </div>
+            <div class="award-item">
+              <span class="award-icon">🏆</span>
+              <div class="award-text">2025-10: <strong>Challenge Cup Defender</strong> <a href="https://mp.weixin.qq.com/s/aO85Qtgv1q-AhClfEu4Gpw" target="_blank">(link)</a> (Grand Prize, AI Track Champion)</div>
+            </div>
+            <div class="award-item">
+              <span class="award-icon">🥇</span>
+              <div class="award-text">2025-09: <strong>National Scholarship</strong> (first 3%)</div>
+            </div>
+            <div class="award-item">
+              <span class="award-icon">🏅</span>
+              <div class="award-text">2025-01: <strong>Honorable Mention</strong> in <strong>MCM 2025</strong></div>
+            </div>
+            <div class="award-item">
+              <span class="award-icon">🥇</span>
+              <div class="award-text">2024-10: <strong>Zhiyuan Honor Scholarships</strong> (first 50%)</div>
             </div>
           </div>
         </div>
@@ -161,7 +372,7 @@
 
     <footer class="site-footer">
       <p>
-        &copy; 2026 Your Name. All rights reserved.
+        &copy; 2026 Xiyuan Yang. All rights reserved.
         <br>
         <span class="template-credit"><a href="https://github.com/wzsyyh/luka-homepage-template">Luka Homepage Template</a> by <a href="https://wzsyyh.github.io/">Yuheng Yang</a></span>
       </p>

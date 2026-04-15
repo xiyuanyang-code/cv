@@ -425,6 +425,200 @@ body.theme-luka .award-text {
   font-size: 14px;
 }
 
+body.theme-luka .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+body.theme-luka .skill-category {
+  padding: 16px;
+  background: var(--luka-social-bg);
+  border-radius: 8px;
+  box-shadow: 0 1px 4px var(--luka-shadow);
+  transition: box-shadow 0.2s ease;
+}
+
+body.theme-luka .skill-category:hover {
+  box-shadow: 0 2px 8px var(--luka-shadow);
+}
+
+body.theme-luka .skill-title {
+  margin: 0 0 10px;
+  color: var(--luka-accent);
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+body.theme-luka .skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+body.theme-luka .skill-icons img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s ease;
+}
+
+body.theme-luka .skill-icons img:hover {
+  transform: scale(1.15);
+}
+
+body.theme-luka .skill-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body.theme-luka .skill-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+body.theme-luka .skill-points li {
+  padding: 3px 0;
+  color: var(--luka-text);
+  font-size: 14px;
+  position: relative;
+  padding-left: 0;
+}
+
+body.theme-luka .skill-points li::before {
+  content: none;
+}
+
+body.theme-luka .skill-points li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--luka-accent);
+  font-weight: bold;
+}
+
+body.theme-luka .project-card,
+body.theme-luka .publication-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding: 20px;
+  background: var(--luka-social-bg);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px var(--luka-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+body.theme-luka .project-card:hover,
+body.theme-luka .publication-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px var(--luka-shadow);
+}
+
+body.theme-luka .publication-header {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+body.theme-luka .publication-image,
+body.theme-luka .project-image {
+  flex-shrink: 0;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: transparent;
+}
+
+body.theme-luka .publication-image img,
+body.theme-luka .project-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+body.theme-luka .publication-content,
+body.theme-luka .project-content {
+  flex: 1;
+  min-width: 0;
+}
+
+body.theme-luka .project-card > div {
+  width: 100%;
+}
+
+body.theme-luka .abstract {
+  padding-top: 8px;
+  margin-top: 8px;
+  border-top: 1px solid var(--luka-border);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--luka-secondary);
+}
+
+body.theme-luka .publication-title,
+body.theme-luka .project-title {
+  margin: 0 0 10px;
+  color: var(--luka-text);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+body.theme-luka .publication-content p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: var(--luka-secondary);
+}
+
+body.theme-luka .publication-links,
+body.theme-luka .project-links {
+  margin: 10px 0;
+}
+
+body.theme-luka .publication-links a,
+body.theme-luka .project-links a {
+  font-size: 13px;
+}
+
+body.theme-luka .abstract {
+  margin-top: 0%;
+  padding-top: 8px;
+  border-top: 1px solid var(--luka-border);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--luka-secondary);
+}
+
+body.theme-luka .course-list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0 0;
+}
+
+body.theme-luka .course-list li {
+  padding: 4px 0 4px 20px;
+  font-size: 14px;
+  color: var(--luka-text);
+  position: relative;
+}
+
+body.theme-luka .course-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--luka-accent);
+  font-weight: bold;
+}
+
 body.theme-luka .site-footer {
   width: 100%;
   flex-basis: 100%;
@@ -514,6 +708,10 @@ body.theme-luka strong {
   body.theme-luka .visitor-card {
     width: 100%;
     max-width: 280px;
+  }
+
+  body.theme-luka .skills-grid {
+    grid-template-columns: 1fr;
   }
 }
 
