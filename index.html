@@ -67,7 +67,7 @@
         <div class="visitor-card">
           <div class="visitor-card-title">Visitor Map</div>
           <div class="visitor-card-body">
-            <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=c2714f&w=a&t=tt&d=rNTFCabSwxEkyVuwU4bj76cRQJvsFsI59Dgyel-Q_us&co=faf9f7&ct=3d3929&cmo=db3e3e&cmn=7bc67b'></script>
+            <script type='text/javascript' id='clustrmaps' src='cdn.clustrmaps.com/map_v2.js?cl=c2714f&w=a&t=tt&d=rNTFCabSwxEkyVuwU4bj76cRQJvsFsI59Dgyel-Q_us&co=faf9f7&ct=3d3929&cmo=db3e3e&cmn=7bc67b'></script>
           </div>
         </div>
       </div>
@@ -140,17 +140,45 @@
       </div>
 
       <div class="section" id="publications">
-        <h2 class="section-title">Publications</h2>
+        <h2 class="section-title">Publications & Tech Projects</h2>
         <div class="section-body">
           <div class="publications">
-            <div class="publication-card">
+            <!-- pub1 mcp-persona -->
+            <div class="publication-card publication-card-tagged">
               <div class="publication-header">
-                <div class="publication-image">
-                  <img src="assets/paper/infomosaic.png" alt="InfoMosaic Publication" width="100%">
+                <div class="publication-media-column">
+                  <span class="publication-venue-tag">ICML 2026 Regular</span>
+                  <div class="publication-image">
+                    <img src="assets/paper/persona.png" alt="Persona Publication" width="100%">
+                  </div>
+                </div>
+                <div class="publication-content">
+                  <h4 class="publication-title">MCP-Persona: Benchmarking LLM Agents on Real-World Personal Applications via Environment Simulation</h4>
+                  <p class="author">Wenhao Wang, Peizhi Niu, Gongyi Zou, Xiyuan Yang, Jingxing Wang, Haoting Shi, Yaxin Du, Jingyi Chai, Xianghe Pang, Shuo Tang, Yanfeng Wang, Siheng Chen</p>
+                  <div class="publication-links">
+                    <!-- paper to be released -->
+                    <!-- <a href="https://arxiv.org/pdf/2510.02271" target="_blank">arXiv</a> / -->
+                    <!-- <a href="https://huggingface.co/datasets/Dorothydu/InfoMosaic_Bench" target="_blank">Dataset</a> / -->
+                    <a href="https://github.com/wwh0411/MCP-Persona" target="_blank">Code</a>
+                  </div>
+                </div>
+              </div>
+              <div class="abstract">
+                We introduce <b>MCP-Persona</b>, a benchmark for evaluating LLM agents on personalized MCP tools in realistic social and productivity environments. It simulates account- and database-grounded tasks across Reddit, Xiaohongshu, Lark, and Slack, exposing challenges beyond generic information seeking. Experiments with SOTA agents reveal substantial gaps in personalized tool use, highlighting MCP-Persona as a practical testbed for personal-application agents.
+              </div>
+            </div>
+
+            <!-- pub2 infomosaic -->
+            <div class="publication-card publication-card-tagged">
+              <div class="publication-header">
+                <div class="publication-media-column">
+                  <span class="publication-venue-tag">ICLR 2026 Poster</span>
+                  <div class="publication-image">
+                    <img src="assets/paper/infomosaic.png" alt="InfoMosaic Publication" width="100%">
+                  </div>
                 </div>
                 <div class="publication-content">
                   <h4 class="publication-title">InfoMosaic-Bench: Evaluating Multi-Source Information Seeking in Tool-Augmented Agents</h4>
-                  <p><strong>ICLR 2026 Accepted</strong></p>
                   <p class="author">Yaxin Du, Yuanshuo Zhang, <strong>Xiyuan Yang</strong>, Yifan Zhou, Cheng Wang, Gongyi Zou, Xianghe Pang, Wenhao Wang, Menglan Chen, Shuo Tang, Zhiyu Li, Feiyu Xiong, Siheng Chen</p>
                   <div class="publication-links">
                     <a href="https://arxiv.org/pdf/2510.02271" target="_blank">arXiv</a> /
@@ -162,6 +190,30 @@
               </div>
               <div class="abstract">
                 We introduce <b>InfoMosaic-Bench</b>, the first benchmark dedicated to multi-source information seeking in tool-augmented agents. Covering 6 representative domains (medicine, finance, maps, video, web, and multi-domain integration), InfoMosaic-Bench requires agents to combine general-purpose search with domain-specific tools. Tasks are synthesized with InfoMosaic-Flow, a scalable pipeline that grounds task conditions in verified tool outputs, enforces cross-source dependencies, and filters out shortcut cases solvable by trivial lookup.
+              </div>
+            </div>
+
+            <!-- pub3 data master -->
+            <div class="publication-card publication-card-tagged">
+              <div class="publication-header">
+                <div class="publication-media-column">
+                  <!-- <span class="publication-venue-tag"></span> -->
+                  <div class="publication-image">
+                    <img src="assets/paper/datamaster.png" alt="DataMaster Publication" width="100%">
+                  </div>
+                </div>
+                <div class="publication-content">
+                  <h4 class="publication-title">DataMaster: Data-Centric Autonomous AI Research</h4>
+                  <p class="author">Yaxin Du*, <strong>Xiyuan Yang*</strong>, Zhifan Zhou, Wanxu Liu, Zixing Lei, Zimeng Chen, Fenyi Liu, Haotian Wu, Yuzhu Cai, Zexi Liu, Xinyu Zhu, WenHao Wang, Linfeng Zhang, Chen Qian, Siheng Chen</p>
+                  <div class="publication-links">
+                    <a href="https://arxiv.org/pdf/2605.10906" target="_blank">arXiv</a> /
+                    <a href="https://github.com/sjtu-sai-agents/DataMaster" target="_blank">Code</a> /
+                    <a href="http://xhslink.com/o/AxgQKtjhwAK" target="_blank">RedNote</a>
+                  </div>
+                </div>
+              </div>
+              <div class="abstract">
+                We introduce <b>DataMaster</b>, a data-agent framework for task-conditioned autonomous data engineering. Given a fixed learning algorithm, DataMaster improves downstream performance by searching for external data, selecting and composing datasets, and applying cleaning or transformation. Its DataTree, shared Data Pool, and Global Memory coordinate branch exploration and reuse evidence, improving medal rate by 32.27% on MLE-Bench Lite and surpassing the instruct model on GPQA.
               </div>
             </div>
 
@@ -189,7 +241,7 @@
       </div>
 
       <div class="section" id="projects">
-        <h2 class="section-title">Projects</h2>
+        <h2 class="section-title">Course & Personal Projects</h2>
         <div class="section-body">
           <div class="publication-card">
             <div class="publication-header">
@@ -208,44 +260,29 @@
             </div>
           </div>
 
-          <div class="publication-card">
-            <div class="publication-header">
-              <div class="publication-image">
-                <img src="assets/paper/e3-ml-master.png" alt="E3-ML-Master" width="100%">
-              </div>
-              <div class="publication-content">
-                <h4 class="publication-title">E³-ML-Master: Advanced Envisioning-Executing for Goal-Driven Self-Evolved ML-Master</h4>
+          <div class="compact-project-grid">
+            <div class="project-card compact-project-card">
+              <div class="project-content">
+                <h4 class="project-title">AlphaBuild: Generating Formulaic Alphas on a Wider Range of Stock Data</h4>
                 <div class="project-links">
-                  <a href="https://github.com/xiyuanyang-code/AI1811-E3-ML-Master" target="_blank"><img src="https://img.shields.io/badge/E³ ML Master-github-brown?style=for-the-badge" /></a>
+                  <a href="https://github.com/xiyuanyang-code/My-Typst-Note/releases/latest/download/alphabuild.pdf" target="_blank"><img src="https://img.shields.io/badge/AlphaBuild-Tech Report-brown?style=for-the-badge" /></a>
                 </div>
               </div>
-            </div>
-            <div class="abstract">
-              We propose <b>E³-ML-Master</b>, an agent framework that enhances environment interaction and introspective reasoning through unified <b>Envisioning</b>, <b>Executing</b>, and <b>Evolution</b>. The framework employs a dual-layer loop in which an Envisioner performs global MCTS-based reasoning over long-term memory, while an Executor conducts fine-grained, environment-aware optimizations via tool interactions. Experiments on MLE-Bench show that E³-ML-Master autonomously discovers more efficient strategies and achieves superior performance.
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-content">
-              <h4 class="project-title">AlphaBuild: Generating Formulaic Alphas on a Wider Range of Stock Data</h4>
-              <div class="project-links">
-                <a href="https://github.com/xiyuanyang-code/My-Typst-Note/releases/latest/download/alphabuild.pdf" target="_blank"><img src="https://img.shields.io/badge/AlphaBuild-Tech Report-brown?style=for-the-badge" /></a>
+              <div class="abstract">
+                Leading <b>AlphaBuild</b> as the final project of course SJTU-AI1803, an RL-based methodology using PPO to optimize factor mining process based on <a href="https://github.com/RL-MLDM/alphagen">AlphaGen</a>, achieving superior backtest performance by leveraging smaller, parallel factor pools and PCA for final factor selection.
               </div>
             </div>
-            <div class="abstract">
-              Leading <b>AlphaBuild</b> as the final project of course SJTU-AI1803, an RL-based methodology using PPO to optimize factor mining process based on <a href="https://github.com/RL-MLDM/alphagen">AlphaGen</a>, achieving superior backtest performance by leveraging smaller, parallel factor pools and PCA for final factor selection.
-            </div>
-          </div>
 
-          <div class="project-card">
-            <div class="project-content">
-              <h4 class="project-title">SAI Community: The first open-source SAIer's forum for courses, careers and future</h4>
-              <div class="project-links">
-                <a href="https://sjtu-sai.github.io/SAI-Community/" target="_blank"><img src="https://img.shields.io/badge/SAI Community-Website-brown?style=for-the-badge" /></a>
+            <div class="project-card compact-project-card">
+              <div class="project-content">
+                <h4 class="project-title">SAI Community: The first open-source SAIer's forum for courses, careers and future</h4>
+                <div class="project-links">
+                  <a href="https://sjtu-sai.github.io/SAI-Community/" target="_blank"><img src="https://img.shields.io/badge/SAI Community-Website-brown?style=for-the-badge" /></a>
+                </div>
               </div>
-            </div>
-            <div class="abstract">
-              The first open-source learning community and technical exchange platform of the School of Artificial Intelligence at Shanghai Jiao Tong University, featuring course material sharing, internship information dissemination, and domain-specific technical knowledge exchange.
+              <div class="abstract">
+                The first open-source learning community and technical exchange platform of the School of Artificial Intelligence at Shanghai Jiao Tong University, featuring course material sharing, internship information dissemination, and domain-specific technical knowledge exchange.
+              </div>
             </div>
           </div>
         </div>

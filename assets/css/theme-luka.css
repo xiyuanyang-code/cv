@@ -515,6 +515,44 @@ body.theme-luka .publication-card {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+body.theme-luka .publication-card-tagged .publication-header {
+  align-items: stretch;
+}
+
+body.theme-luka .publication-media-column {
+  flex-shrink: 0;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 6px;
+}
+
+body.theme-luka .publication-card-tagged .publication-image {
+  width: 100%;
+}
+
+body.theme-luka .publication-card-tagged .publication-content > :last-child {
+  margin-bottom: 0;
+}
+
+body.theme-luka .publication-venue-tag {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  min-height: 26px;
+  padding: 6px 11px;
+  border-radius: 6px;
+  background: #9a3d14;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  box-shadow: 0 2px 6px rgba(154, 61, 20, 0.25);
+}
+
 body.theme-luka .project-card:hover,
 body.theme-luka .publication-card:hover {
   transform: translateY(-2px);
@@ -553,6 +591,38 @@ body.theme-luka .project-content {
 
 body.theme-luka .project-card > div {
   width: 100%;
+}
+
+body.theme-luka .compact-project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+body.theme-luka .compact-project-card {
+  gap: 10px;
+  margin-bottom: 0;
+  padding: 16px;
+}
+
+body.theme-luka .compact-project-card .project-title {
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+body.theme-luka .compact-project-card .project-links {
+  margin: 8px 0 0;
+}
+
+body.theme-luka .compact-project-card .project-links img {
+  max-width: 100%;
+  height: auto;
+}
+
+body.theme-luka .compact-project-card .abstract {
+  font-size: 12.5px;
+  line-height: 1.45;
 }
 
 body.theme-luka .abstract {
@@ -712,6 +782,11 @@ body.theme-luka strong {
 
   body.theme-luka .skills-grid {
     grid-template-columns: 1fr;
+  }
+
+  body.theme-luka .compact-project-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 }
 
