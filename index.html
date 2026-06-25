@@ -81,13 +81,13 @@
             <b>Xiyuan Yang (杨希渊)</b> is now an undergraduate (sophomore) in School of Artificial Intelligence, Shanghai Jiao Tong University (<b>SJTU-SAI</b>). During his freshman year of study, he ranked <b>SECOND of 62</b> in grades and received honors including the <b>National Scholarship</b> (<b>5</b> scholarships in total). His research interests focus on <b>Digital Agents</b> with broad capability boundaries (Agentic Scaling Law) and <b>Collaborative Multi-agent Intelligence</b>. He joined the research group <b>MAGIC</b> in SJTU, under the supervision of Prof. <a href="https://siheng-chen.github.io/">Siheng Chen</a>.
           </p>
           <p>
-            My research interests focus on exploring the <b>Agentic Scaling Law</b> for large language models in the Agent era, to expand the capability boundaries of language model agents in areas such as tool calling, reasoning generalization, and long-term memory. I also investigate multi-agent collaboration workflows and information optimization within collective intelligence. I believe the future world will be a world of agents.
+            My research interest lies in continuously pushing the capability boundaries of language intelligence, enabling it to accomplish increasingly complex and valuable tasks. I focus on two key directions: <b>agentic harness construction</b>, which builds workflows that maximize the potential of base language models through agentic tool-calling and agentic memory; and <b>agentic training-data construction</b>, which synthesizes high-quality agent trajectories and feeds them back into the model's post-training and mid-training stages, so that the model intrinsically acquires these agentic capabilities.
           </p>
           <p>Topics I'm currently interested in:</p>
           <ul>
-            <li>Agentic Tool Calling and Agentic Memory Enhancement</li>
-            <li>Multi-agent Systems and Multi-Agent Collaborations</li>
-            <li>Domain-augmented Agents (Software Coding Agents, etc.)</li>
+            <li>Self-Evolving Agents for Autonomous LLM Post-Training</li>
+            <li>Agentic Trajectory Data Construction</li>
+            <li>Agentic Tool Calling Benchmarks</li>
           </ul>
           <p><strong><a href="https://github.com/xiyuanyang-code/resume/releases/latest/download/XiyuanYang-Resume.pdf" target="_blank" rel="noopener">Download my CV</a></strong></p>
         </div>
@@ -143,6 +143,30 @@
         <h2 class="section-title">Publications & Tech Projects</h2>
         <div class="section-body">
           <div class="publications">
+            <!-- pub3 data master -->
+            <div class="publication-card publication-card-tagged">
+              <div class="publication-header">
+                <div class="publication-media-column">
+                  <!-- <span class="publication-venue-tag"></span> -->
+                  <div class="publication-image">
+                    <img src="assets/paper/datamaster.png" alt="DataMaster Publication" width="100%">
+                  </div>
+                </div>
+                <div class="publication-content">
+                  <h4 class="publication-title">DataMaster: Data-Centric Autonomous AI Research</h4>
+                  <p class="author">Yaxin Du*, <strong>Xiyuan Yang*</strong>, Zhifan Zhou, Wanxu Liu, Zixing Lei, Zimeng Chen, Fenyi Liu, Haotian Wu, Yuzhu Cai, Zexi Liu, Xinyu Zhu, WenHao Wang, Linfeng Zhang, Chen Qian, Siheng Chen</p>
+                  <div class="publication-links">
+                    <a href="https://arxiv.org/pdf/2605.10906" target="_blank">arXiv</a> /
+                    <a href="https://github.com/sjtu-sai-agents/DataMaster" target="_blank">Code</a> /
+                    <a href="http://xhslink.com/o/AxgQKtjhwAK" target="_blank">RedNote</a>
+                  </div>
+                </div>
+              </div>
+              <div class="abstract">
+                We introduce <b>DataMaster</b>, a data-agent framework for task-conditioned autonomous data engineering. Given a fixed learning algorithm, DataMaster improves downstream performance by searching for external data, selecting and composing datasets, and applying cleaning or transformation. Its DataTree, shared Data Pool, and Global Memory coordinate branch exploration and reuse evidence, improving medal rate by 32.27% on MLE-Bench Lite and surpassing the instruct model on GPQA.
+              </div>
+            </div>
+
             <!-- pub1 mcp-persona -->
             <div class="publication-card publication-card-tagged">
               <div class="publication-header">
@@ -192,30 +216,6 @@
               </div>
             </div>
 
-            <!-- pub3 data master -->
-            <div class="publication-card publication-card-tagged">
-              <div class="publication-header">
-                <div class="publication-media-column">
-                  <!-- <span class="publication-venue-tag"></span> -->
-                  <div class="publication-image">
-                    <img src="assets/paper/datamaster.png" alt="DataMaster Publication" width="100%">
-                  </div>
-                </div>
-                <div class="publication-content">
-                  <h4 class="publication-title">DataMaster: Data-Centric Autonomous AI Research</h4>
-                  <p class="author">Yaxin Du*, <strong>Xiyuan Yang*</strong>, Zhifan Zhou, Wanxu Liu, Zixing Lei, Zimeng Chen, Fenyi Liu, Haotian Wu, Yuzhu Cai, Zexi Liu, Xinyu Zhu, WenHao Wang, Linfeng Zhang, Chen Qian, Siheng Chen</p>
-                  <div class="publication-links">
-                    <a href="https://arxiv.org/pdf/2605.10906" target="_blank">arXiv</a> /
-                    <a href="https://github.com/sjtu-sai-agents/DataMaster" target="_blank">Code</a> /
-                    <a href="http://xhslink.com/o/AxgQKtjhwAK" target="_blank">RedNote</a>
-                  </div>
-                </div>
-              </div>
-              <div class="abstract">
-                We introduce <b>DataMaster</b>, a data-agent framework for task-conditioned autonomous data engineering. Given a fixed learning algorithm, DataMaster improves downstream performance by searching for external data, selecting and composing datasets, and applying cleaning or transformation. Its DataTree, shared Data Pool, and Global Memory coordinate branch exploration and reuse evidence, improving medal rate by 32.27% on MLE-Bench Lite and surpassing the instruct model on GPQA.
-              </div>
-            </div>
-
             <div class="publication-card">
               <div class="publication-header">
                 <div class="publication-image">
@@ -240,59 +240,94 @@
       </div>
 
       <div class="section" id="projects">
-        <h2 class="section-title">Course & Personal Projects</h2>
+        <h2 class="section-title">Open Source Projects</h2>
         <div class="section-body">
-          <div class="publication-card">
-            <div class="publication-header">
-              <div class="publication-image">
-                <img src="assets/paper/Intellisearch.png" alt="IntelliSearch" width="100%">
-              </div>
-              <div class="publication-content">
-                <h4 class="publication-title">IntelliSearch V3.1: Unifying Search, Empowering Action for Tool Calling Autonomous Agents</h4>
-                <div class="project-links">
-                  <a href="https://github.com/SJTU-SAI-GeekCenter/IntelliSearch" target="_blank"><img src="https://img.shields.io/badge/IntelliSearch-github-brown?style=for-the-badge" /></a>
-                </div>
-              </div>
-            </div>
-            <div class="abstract">
-              We introduce <b>IntelliSearch</b>, a search-augmented intelligent agent for reliable decision support in real-world, high-noise and multi-constraint environments. Built on the Model Context Protocol (MCP), the system enables large language models to interact with heterogeneous tools, data sources, and execution environments through standardized, verifiable interfaces. IntelliSearch integrates 16 MCP servers and over one hundred carefully engineered tool interfaces, supporting multi-source retrieval, controlled execution, and feedback-driven reasoning. The agent architecture decouples reasoning, memory, and tool scheduling to better support long-horizon tasks and system extensibility.
-            </div>
+          <p class="github-intro">Active <a href="https://github.com/xiyuanyang-code" target="_blank">GitHub</a> committer with 30+ open-source repositories and 1500+ commits.</p>
+          <!-- GitHub Contributions -->
+          <div class="github-contributions">
+            <img src="https://ghchart.rshah.org/xiyuanyang-code" alt="Xiyuan Yang's GitHub Contributions" class="ghchart-img">
+            <img src="https://raw.githubusercontent.com/xiyuanyang-code/xiyuanyang-code/main/profile-3d-contrib/profile-season-animate.svg" alt="3D Contribution Graph" class="ghchart-3d-img">
           </div>
 
-          <div class="compact-project-grid">
-            <div class="project-card compact-project-card">
-              <div class="project-content">
-                <h4 class="project-title">AlphaBuild: Generating Formulaic Alphas on a Wider Range of Stock Data</h4>
-                <div class="project-links">
-                  <a href="https://github.com/xiyuanyang-code/My-Typst-Note/releases/latest/download/alphabuild.pdf" target="_blank"><img src="https://img.shields.io/badge/AlphaBuild-Tech Report-brown?style=for-the-badge" /></a>
-                </div>
+          <!-- Open-Source Projects (collapsible) -->
+          <details class="project-group">
+            <summary class="project-group-title">Open-Source Projects</summary>
+            <div class="project-group-list">
+              <div class="project-row">
+                <a href="https://github.com/SJTU-SAI-GeekCenter/IntelliSearch" target="_blank"><img src="https://img.shields.io/badge/IntelliSearch-Agent-brown?style=flat&logo=github" /></a>
+                <span class="project-desc"><b>IntelliSearch V3.1</b>: Unifying Search, Empowering Action for tool calling autonomous agents.</span>
               </div>
-              <div class="abstract">
-                Leading <b>AlphaBuild</b> as the final project of course SJTU-AI1803, an RL-based methodology using PPO to optimize factor mining process based on <a href="https://github.com/RL-MLDM/alphagen">AlphaGen</a>, achieving superior backtest performance by leveraging smaller, parallel factor pools and PCA for final factor selection.
+              <div class="project-row">
+                <a href="https://sjtu-sai.github.io/SAI-Community/" target="_blank"><img src="https://img.shields.io/badge/SAI--Community-Forum-006400?style=flat&logo=gitbook" /></a>
+                <span class="project-desc"><b>SAI Community</b>: The first open-source SAIer's forum for courses, careers and future.</span>
+              </div>
+              <div class="project-row">
+                <a href="https://xiyuanyang-code.github.io" target="_blank"><img src="https://img.shields.io/badge/Technical--Blog-Blog-red?style=flat&logo=gitbook" /></a>
+                <span class="project-desc"><b>Technical Blog</b>: 120+ articles on CS and AI, 450k+ words.</span>
+              </div>
+              <div class="project-row">
+                <a href="https://xiyuanyang-code.github.io" target="_blank"><img src="https://img.shields.io/badge/LLM--Infra--Docs-Docs-red?style=flat&logo=gitbook" /></a>
+                <span class="project-desc"><b>LLM Infra Docs</b>: Core source code analysis of large-scale open-source LLM infrastructure.</span>
+              </div>
+              <div class="project-row">
+                <a href="https://github.com/xiyuanyang-code/AgentCodeBase" target="_blank"><img src="https://img.shields.io/badge/Agent--Codebase-Toolkit-orange?style=flat&logo=open-source-initiative" /></a>
+                <span class="project-desc"><b>Agent Codebase</b>: Generalized codebase for agentic scientific research pipelines.</span>
+              </div>
+              <div class="project-row">
+                <a href="https://github.com/xiyuanyang-code/PaperFlow" target="_blank"><img src="https://img.shields.io/badge/PaperFlow-LaTeX-orange?style=flat&logo=open-source-initiative" /></a>
+                <span class="project-desc"><b>PaperFlow</b>: Never use Overleaf again!</span>
+              </div>
+              <div class="project-row">
+                <a href="https://github.com/xiyuanyang-code/SyncFlash" target="_blank"><img src="https://img.shields.io/badge/SyncFlash-DevOps-orange?style=flat&logo=open-source-initiative" /></a>
+                <span class="project-desc"><b>SyncFlash</b>: Lightning-fast configuration of your server.</span>
               </div>
             </div>
+          </details>
 
-            <div class="project-card compact-project-card">
-              <div class="project-content">
-                <h4 class="project-title">SAI Community: The first open-source SAIer's forum for courses, careers and future</h4>
-                <div class="project-links">
-                  <a href="https://sjtu-sai.github.io/SAI-Community/" target="_blank"><img src="https://img.shields.io/badge/SAI Community-Website-brown?style=for-the-badge" /></a>
-                </div>
+          <!-- Course Labs (collapsible) -->
+          <details class="project-group">
+            <summary class="project-group-title">Course Labs</summary>
+            <div class="project-group-list">
+              <div class="project-row">
+                <a href="https://github.com/xiyuanyang-code/AI1811-LLM-Reasoning" target="_blank"><img src="https://img.shields.io/badge/AI1811-RL-brown?style=flat&logo=read-the-docs" /></a>
+                <span class="project-desc"><b>LLM Reasoning</b>: Enhancing reasoning abilities for LLMs using reinforcement learning.</span>
               </div>
-              <div class="abstract">
-                The first open-source learning community and technical exchange platform of the School of Artificial Intelligence at Shanghai Jiao Tong University, featuring course material sharing, internship information dissemination, and domain-specific technical knowledge exchange.
+              <div class="project-row">
+                <a href="https://github.com/xiyuanyang-code/AI1811-Clustering" target="_blank"><img src="https://img.shields.io/badge/AI1811-ML-brown?style=flat&logo=read-the-docs" /></a>
+                <span class="project-desc"><b>Clustering</b>: Clustering of high-dimensional data with intrinsic low rank.</span>
+              </div>
+              <div class="project-row">
+                <a href="https://github.com/xiyuanyang-code/AI1807-ImageScaling" target="_blank"><img src="https://img.shields.io/badge/AI1807-Numeric-brown?style=flat&logo=read-the-docs" /></a>
+                <span class="project-desc"><b>Image Scaling</b>: 2D image scaling based on classical interpolation algorithms.</span>
+              </div>
+              <div class="project-row">
+                <a href="https://github.com/xiyuanyang-code/CTRPress" target="_blank"><img src="https://img.shields.io/badge/AI2801-NLP-brown?style=flat&logo=read-the-docs" /></a>
+                <span class="project-desc"><b>CTR-Press</b>: Compress-then-Refine for training-free KV cache compression.</span>
+              </div>
+              <div class="project-row">
+                <a href="https://github.com/AesliteC/L-PHYM" target="_blank"><img src="https://img.shields.io/badge/AI2802-Robotics-brown?style=flat&logo=read-the-docs" /></a>
+                <span class="project-desc"><b>L-PHYM</b>: Long-horizon language-driven physics-based motion control.</span>
+              </div>
+              <div class="project-row">
+                <a href="https://github.com/xiyuanyang-code/Data-Structure-Awesome" target="_blank"><img src="https://img.shields.io/badge/CS0501H-Data--Structure-chocolate?style=flat&logo=read-the-docs" /></a>
+                <span class="project-desc"><b>Data Structure</b>: Course notes and source code for data structures.</span>
+              </div>
+              <div class="project-row">
+                <a href="https://github.com/xiyuanyang-code/My-CSAPP" target="_blank"><img src="https://img.shields.io/badge/CMU--15213-CSAPP-chocolate?style=flat&logo=read-the-docs" /></a>
+                <span class="project-desc"><b>CSAPP</b>: Computer Systems: A Programmer's Perspective (labs and notes).</span>
+              </div>
+              <div class="project-row">
+                <a href="https://github.com/xiyuanyang-code/My-NLP" target="_blank"><img src="https://img.shields.io/badge/Stanford--CS336-LLM-chocolate?style=flat&logo=read-the-docs" /></a>
+                <span class="project-desc"><b>LLM</b>: Stanford CS336 language models learning notes.</span>
               </div>
             </div>
-          </div>
+          </details>
         </div>
       </div>
 
       <div class="section" id="technical-blogs">
         <h2 class="section-title">Technical Blogs</h2>
         <div class="section-body">
-          <p>
-            Active <a href="https://github.com/xiyuanyang-code/xiyuanyang-code.github.io" target="_blank">GitHub</a> committer with 30+ open-source repositories and 1500+ commits.
-          </p>
           <p>
             Maintainer of <strong><a href="https://xiyuanyang-code.github.io" target="_blank">Xiyuan Yang's Technical Blog</a></strong>. I regularly publish technical content focusing on computer science and AI. To date, I have authored <strong>over 120 articles</strong> with a cumulative word count exceeding <strong>450,000</strong> words.
           </p>
@@ -330,39 +365,20 @@
             </div>
 
             <div class="skill-category">
-              <h5 class="skill-title"><strong>Python Modules</strong></h5>
+              <h5 class="skill-title"><strong>ML & DL & LLM</strong></h5>
               <div class="skill-icons">
                 <img src="assets/logo/pytorch-svgrepo-com.svg" alt="PyTorch" width="32" height="32" title="PyTorch">
-                <img src="assets/logo/numpy-svgrepo-com.svg" alt="NumPy" width="32" height="32" title="NumPy">
+                <img src="https://raw.githubusercontent.com/vllm-project/media-kit/refs/heads/main/vLLM-Logo.svg" alt="Vllm" width="32" height="32" title="Vllm">
+                <img src="assets/img/cuda-svgrepo-com.svg" alt="Cuda" width="32" height="32" title="Cuda">
                 <img src="assets/logo/pandas-svgrepo-com.svg" alt="Pandas" width="32" height="32" title="Pandas">
-                <img src="assets/logo/Matplotlib.svg" alt="Matplotlib" width="32" height="32" title="Matplotlib">
                 <img src="assets/logo/mcp.png" alt="FastMCP" width="32" height="32" title="FastMCP">
               </div>
             </div>
 
             <div class="skill-category">
-              <h5 class="skill-title"><strong>ML & DL</strong></h5>
-              <ul class="skill-points">
-                <li>Deep learning architectures</li>
-                <li>Model training techniques</li>
-                <li>Reinforcement learning</li>
-              </ul>
-            </div>
-
-            <div class="skill-category">
-              <h5 class="skill-title"><strong>LLM & Agents</strong></h5>
-              <ul class="skill-points">
-                <li>Large Language Models</li>
-                <li>Post training techniques</li>
-                <li>Multi-agent frameworks</li>
-              </ul>
-            </div>
-
-            <div class="skill-category">
               <h5 class="skill-title"><strong>Languages</strong></h5>
               <ul class="skill-points">
-                <li>Chinese (Native)</li>
-                <li>English (CET-6: 584)</li>
+                English (CET-6: 584)
               </ul>
             </div>
           </div>

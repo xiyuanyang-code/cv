@@ -689,6 +689,98 @@ body.theme-luka .course-list li::before {
   font-weight: bold;
 }
 
+/* GitHub Contributions */
+body.theme-luka .github-contributions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+body.theme-luka .ghchart-img {
+  width: 100%;
+  min-width: 480px;
+  height: auto;
+}
+
+body.theme-luka .ghchart-3d-img {
+  width: 100%;
+  min-width: 480px;
+  height: auto;
+}
+
+/* Collapsible Project Groups */
+body.theme-luka .project-group {
+  margin-bottom: 12px;
+  border: 1px solid var(--luka-border);
+  border-radius: 10px;
+  background: var(--luka-social-bg);
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+}
+
+body.theme-luka .project-group[open] {
+  box-shadow: 0 2px 8px var(--luka-shadow);
+}
+
+body.theme-luka .project-group-title {
+  padding: 14px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--luka-accent);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  user-select: none;
+}
+
+body.theme-luka .project-group-title::before {
+  content: "\25B6";
+  font-size: 10px;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+body.theme-luka .project-group[open] .project-group-title::before {
+  transform: rotate(90deg);
+}
+
+body.theme-luka .project-group-title::-webkit-details-marker {
+  display: none;
+}
+
+body.theme-luka .project-group-list {
+  padding: 0 20px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+body.theme-luka .project-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+}
+
+body.theme-luka .project-row a {
+  flex-shrink: 0;
+}
+
+body.theme-luka .project-row img {
+  display: block;
+  height: 22px;
+}
+
+body.theme-luka .project-desc {
+  font-size: 13.5px;
+  color: var(--luka-secondary);
+  line-height: 1.5;
+}
+
 body.theme-luka .site-footer {
   width: 100%;
   flex-basis: 100%;
